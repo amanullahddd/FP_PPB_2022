@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#2f3363"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Perbarui data" />
+
+    <EditText
+        android:id="@+id/edt_dialog_profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:textColor="#a2a4b5"
+        android:background="@drawable/background_edittext" />
+
+</LinearLayout>

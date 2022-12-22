@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#6672ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imgbtn_profile_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/txt_hi_profile_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Hi User"
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil\nAkunmu!"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_profile_back"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_profile_back" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/light_purple_background"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#2f3363"
+                    android:textStyle="bold"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nama" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_profile_nama"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="48dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/ic_menu_edit" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/txt_profile_nama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:textColor="#a2a4b5"
+                android:background="@drawable/background_edittext" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#2f3363"
+                    android:textStyle="bold"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Email" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_profile_email"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="48dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/ic_menu_edit" />
+            </GridLayout>
+
+
+            <TextView
+                android:id="@+id/txt_profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:textColor="#a2a4b5"
+                android:background="@drawable/background_edittext" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#2f3363"
+                android:textStyle="bold"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:text="Password" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_profile_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubah Password"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:textColor="#2f3363"
+                android:background="@drawable/background_edittext"
+                android:textAllCaps="false"/>
+
+            <!--<com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                app:passwordToggleEnabled="true" >
+
+                <EditText
+                    android:id="@+id/edt_profile_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    android:textColor="#a2a4b5"
+                    android:inputType="none"
+                    android:background="@drawable/background_edittext" />
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_profile_logout"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_button_2"
+                android:drawableEnd="@drawable/circle"
+                android:padding="4dp"
+                android:paddingStart="64dp"
+                android:text="Logout"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

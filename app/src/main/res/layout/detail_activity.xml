@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f5f5f5">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="225dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_detail"
+        android:layout_width="133dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:shapeAppearanceOverlay="@style/Rounded"
+        app:srcCompat="@drawable/name" />
+
+    <TextView
+        android:id="@+id/txt_detail_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cilok Kang Asep"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_detail" />
+
+    <TextView
+        android:id="@+id/txt_detail_nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wa 081422412230"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detail_judul"
+        app:layout_constraintStart_toStartOf="@+id/txt_detail_judul"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_judul" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Menu :"
+                android:layout_margin="10dp"
+                android:textColor="#5917e1"
+                android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:text="Cilok aci, tahu aci, dan gorengan @4 1K \nSaos : tomat, sambal, dan kacang."
+            android:textColor="#5b5b5b"
+            android:textSize="13sp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="#585858" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lokasi :"
+                android:layout_margin="10dp"
+                android:textColor="#5917e1"
+                android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_detail_alamat"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="24dp"
+            android:text="-7.28980334728361, 112.79833160311983"
+            android:textColor="#5b5b5b"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView13"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="#585858" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Deskripsi :"
+            android:layout_margin="10dp"
+            android:textColor="#5917e1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_detail_deskripsi"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="24dp"
+            android:text="Cilok Kang Asep 5 tahun berjualan,\nMurah dan mengenyangkan.\nDijamin enak."
+            android:textColor="#5b5b5b"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="#585858" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_detail_panggil"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_btn_menu"
+        android:gravity="center"
+        android:text="Lihat Map"
+        android:textColor="#2f3363"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_detail_back"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_detail_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/orange_btn_background"
+        android:gravity="center"
+        android:text="Kembali"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

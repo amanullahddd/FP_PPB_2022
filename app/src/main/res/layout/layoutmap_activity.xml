@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fr_maplayout"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context=".LayoutMapActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_maplayout_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/orange_btn_background"
+        android:gravity="center"
+        android:text="Beranda"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="32dp" />
+
+</LinearLayout>

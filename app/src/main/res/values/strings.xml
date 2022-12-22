@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">NguberPKL UI</string>
+    <string name="google_maps_key">map_key</string>
+    <string-array name="judul_dagangan">
+        <item>Cilok Kang Asep</item>
+        <item>Batagor Siomay mang Asep</item>
+        <item>Batagor Barokah</item>
+        <item>Cireng Otak-otak</item>
+    </string-array>
+    <string-array name="noHP">
+        <item>081118192317</item>
+        <item>081354865444</item>
+        <item>082564897223</item>
+        <item>0851412578989</item>
+    </string-array>
+    <string-array name="alamat_pedagang">
+        <item>003, Jl. Arief Rahman Hakim No.51, RW.01, Keputih, Kec. Sukolilo, Kota SBY, Jawa Timur 60111</item>
+        <item>PQ5X+WW6, Jl. KH. Ahmad Dahlan, Keputih, Kec. Sukolilo, Kota SBY, Jawa Timur 60111</item>
+        <item>Jl. Arief Rahman Hakim No.54, Keputih, Kec. Sukolilo, Kota SBY, Jawa Timur 60111</item>
+        <item>Jl. Keputih 21-25, Keputih, Kec. Sukolilo, Kota SBY, Jawa Timur 60111</item>
+    </string-array>
+    <string-array name="latlong_pedagang">
+        <item>-7.289794136001184, 112.79834115461655</item>
+        <item>-7.290137865453126, 112.79977612860446</item>
+        <item>-7.290066660242122, 112.79742705441457</item>
+        <item>-7.289937624655556, 112.7972413114155</item>
+    </string-array>
+    <string-array name="keterangan_dagangan">
+        <item>Cilok aci, tahu aci, gorengan tambah saus kacang</item>
+        <item>Batagor Siomay asli Bandung menerima pesanan</item>
+        <item>Batagor puyuh kentang tahu</item>
+        <item>Cireng, Otak-otak, Tahu kress depan Masjid</item>
+    </string-array>
+</resources>
